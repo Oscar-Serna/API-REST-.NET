@@ -1,6 +1,6 @@
 ﻿namespace Prueba1_SourceAFIS.Interfaces
 {
-    public class ICrearEmpleado
+    public interface ICrearEmpleado
     {
         public string? nombre { get; set; }
         public string? cedula { get; set; }
