@@ -15,9 +15,9 @@ namespace Prueba1_SourceAFIS.Controllers
     public class EmpleadosController
     {
 
-        private static string cadenaConexion = "Data Source=DESKTOP-8OFI3LC,1433;user id=code;password=123;Initial Catalog=HUELLASDB;Persist Security Info=true;Integrated Security=True";
+        private static string cadenaConexion = "*Se obtiene la cadena de conexion*";
 
-        private string defaultKey = "un1d4d1nf0rm4t1c4c3cyt3";
+        private string defaultKey = "*ContraseñaProvisional*";
 
         [HttpGet]
         [Route("api/empleados/obtenerEmpleados")]
