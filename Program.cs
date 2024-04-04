@@ -9,7 +9,7 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(builderOptions =>
     {
 
-        string[] origins = { "http://localhost:5173", "https://cecyt3prueba.ipn.mx" };
+        string[] origins = { "Origins" };
 
         builderOptions.WithOrigins(origins)
                 .AllowAnyHeader()
@@ -32,6 +32,6 @@ app.MapControllers();
 app.Run();
 
 /*
-    AUTHOR: OSCAR GILBERTO SERNA HERN¡NDEZ
+    AUTHOR: OSCAR GILBERTO SERNA HERN√ÅNDEZ
     GITHUB: https://github.com/Oscar-Serna
 */
