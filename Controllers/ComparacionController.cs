@@ -15,13 +15,13 @@ namespace Prueba1_SourceAFIS.Controllers
     public class ComparacionController
     {
 
-        private static string cadenaConexion = "Data Source=DESKTOP-8OFI3LC,1433;user id=code;password=123;Initial Catalog=HUELLASDB;Persist Security Info=true;Integrated Security=True";
+        private static string cadenaConexion = "*Se obtiene la cadena de conexion*";
 
         [HttpPost]
         [Route("api/comparacion/obtenerComparacion")]
         public async Task<IDevolverComparacion> ObtenerComparacion([FromBody] IObtenerComparacion interfazObtenerComparacion)
         {
-            string pathHuellaTemporal = $"{Directory.GetCurrentDirectory()}\\020002020003010308030.png";
+            string pathHuellaTemporal = $"{Directory.GetCurrentDirectory()}\\huella.png";
 
             string pathPlantillasCBOR = $"{Directory.GetCurrentDirectory()}\\PlantillasCBOR\\";
 
@@ -102,7 +102,7 @@ namespace Prueba1_SourceAFIS.Controllers
         public string GuardarHuellaTemporal(string imagenBase64)
         {
 
-            string huellaTemporalPath = $"{Directory.GetCurrentDirectory()}\\020002020003010308030.png";
+            string huellaTemporalPath = $"{Directory.GetCurrentDirectory()}\\huella.png";
 
             try
             {
